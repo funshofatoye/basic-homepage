@@ -1,0 +1,458 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+}
+
+@media only screen and (max-width: 768px) {
+	[class*="col-"] {
+		float: none;
+		width: 100% !important;
+
+	}
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #FFF;
+	z-index: 10;
+}
+
+section {
+	margin-top: 100px;
+}
+
+.container {
+	width: 80%;
+	margin: 0px auto;
+}
+
+@media only screen and (max-width: 768px) {
+	header nav .mobile-row:after {
+		content: ".";
+		display: block;
+		visibility: hidden;
+		height: 0;
+		font-size: 0;
+		clear: both;
+	}
+}
+
+header nav .logo-block img {
+	width: 200px;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 350px) {
+	header nav .logo-block {
+		width: 50% !important;
+		float: left;
+	}
+}
+
+header nav #mobile-nav-button {
+	display: none;
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+	header nav #mobile-nav-button {
+		display: block;
+		position: relative;
+		z-index: 16;
+	}
+}
+
+header nav #mobile-nav-button a {
+	font-size: 30px;
+	color: #2A8B22;
+}
+
+@media only screen and (max-width: 768px) and (min-width: 350px) {
+	header nav #mobile-nav-button {
+		float: right;
+		padding: 0 25px;
+	}
+
+	header nav #mobile-nav-button a {
+		line-height: 102px;
+	}
+}
+
+header nav #mobile-nav-collapsible {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	/* header nav #mobile-nav-collapsible {
+		display: none;
+	} */
+
+	header nav #main-nav {
+		display: none;
+	}
+}
+
+
+header nav .logo-block {
+	padding-left: 50px !important;
+}
+
+header nav ul {
+	list-style-type: none;
+	padding: 0 20px;
+	margin: 0;
+}
+
+header nav ul li {
+	text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+	header nav ul {
+		padding: 0;
+	}
+
+	header nav ul li {
+		border: 1px solid #2A8B22;
+	}
+}
+
+header nav ul li a {
+	text-decoration: none;
+	color: #9FBF9A;
+	text-transform: capitalize;
+	display: block;
+	/*text-align: center;*/
+
+}
+
+/*@media only screen and (max-width: 768px) {
+	header nav ul li a {
+		text-decoration: none;
+		color: #9FBF9A;
+		text-transform: capitalize;
+		text-align: center;
+	}
+}*/
+
+.nav-ads {
+	text-align: center;
+}
+
+.nav-ads p i {
+	color: #2A8B22;
+	margin-right: 2px;
+	font-size: 2vw;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav-ads p i {
+		font-size: 8vw;
+	}
+}
+
+.nav-ads p {
+	font-size: 1vw;
+	letter-spacing: -0.5px;
+}
+
+@media only screen and (max-width: 768px) {
+	.nav-ads p  {
+		font-size: 5vw;
+	}
+}
+
+/*.nav-ads p span {
+	line-height: -10px !important;
+}*/
+
+
+.nav-ads .signup-newsletter-btn {
+	background-color: #2A8B22;
+	width: 120px;
+	margin: 5px auto;
+	padding: 2px;
+	border-radius: 2px;
+}
+
+.nav-ads .signup-newsletter-btn a {
+	text-decoration: none;
+}
+
+.nav-ads .signup-newsletter-btn .sign-up {
+	color: #FDDA0E;
+	text-transform: uppercase;
+	display: block;
+	font-weight: 900;
+	font-size: 18px;
+}
+
+.nav-ads .signup-newsletter-btn .for-newsletter {
+	font-size: 12px;
+	color: #FFF;
+
+}
+
+.nav-ads .signup-newsletter-btn .for-newsletter strong {
+	text-transform: capitalize;
+}
+
+.nav-ads .signup-newsletter-btn .for-newsletter em {
+	font-weight: lighter;
+}
+
+.search-anything-in-nigeria {
+	background-image: url(images/teens-smiling.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	/* height: 500px; */
+}
+
+@media only screen and (max-width: 768px) {
+	.search-anything-in-nigeria {
+		height: auto;
+		margin-top: 132px;
+		background-color: #2A8B22;
+	}
+} 
+
+.search-anything-in-nigeria form {
+	width: 81%;
+	margin: 172px auto;
+}
+
+@media only screen and (max-width: 768px) {
+	.search-anything-in-nigeria form {
+		width: 100%;
+		margin: 100px auto 50px auto;
+		/*background-color: #2A8B22;*/
+	}
+}
+
+.search-anything-in-nigeria form input[type=text] {
+	width: 100%;
+	padding: 15px;
+	border: 2px solid #2A8B22;
+	border-radius: 50px;
+	background-image: url('images/search.png');
+	background-position: 97% center;
+	background-size: 25px;
+	background-repeat: no-repeat;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding-left: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+	.search-anything-in-nigeria form input[type=text] {
+		/* background-position: 90% center; */
+	}
+}
+
+.search-anything-in-nigeria form input[type=text]::placeholder {
+	font-size: 15px;
+	font-weight: 501;
+}
+
+.products-section {
+	/* text-align: center; */
+}
+
+.products-section h2 {
+	text-align: center;
+	font-size: 40px;
+	color: #333;
+}
+
+.products-section p.tagline {
+	text-align: center;
+	font-size: 12px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+
+/* .products-section .product-ads .product-icon, .products-section .product-ads .read-more-btn {
+	text-align: justify;
+} */
+
+.products-section .product-ads .product-icon {
+	margin-bottom: 10px;
+}
+
+.products-section .product-ads .product-icon i {
+	font-size: 80px;
+	color: #2A8B22;
+}
+
+.products-section .product-ads h3 {
+	font-weight: 501px !important;
+	font-size: 30px;
+	/* text-align: center; */
+}
+
+.products-section .product-ads p {
+	font-size: 14px;
+}
+
+.read-more-btn, .buy-now-btn {
+	margin-top: 20px;
+	/* text-align: center; */
+}
+
+.read-more-btn a, .buy-now-btn a {
+	text-decoration: none;
+	border: 2px solid #2A8B22;
+	border-radius: 50px;
+	padding: 4px 20px;
+	color: #2A8B22;
+	text-align: center;
+}
+
+#carousel {
+	position: relative;
+}
+
+#carousel .carousel-pointer {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	height: auto;
+	margin-top: -22px;
+	padding: 5px 10px;
+	color: #2A8B22;
+	font-weight: 900;
+	font-size: 10px;
+	transition: 0.6s ease;
+	border: 5px solid #2A8B22;
+	border-radius: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+	#carousel .carousel-pointer {
+		top: 15%;
+		font-size: 10px;
+	}
+}
+
+#carousel .carousel-pointer.left {
+	left: 40px;
+  	border-radius: 100%;
+}
+
+#carousel .carousel-pointer.right {
+	right: 40px;
+  	border-radius: 100%;
+}
+
+#carousel .carousel-item {
+	display: none;
+	background-repeat: no-repeat;
+	background-size: 70%;
+	background-position: center right;
+}
+
+.animate {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+  
+  @keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+  }
+
+#carousel .carousel-item .single-business-ad h3 {
+	font-weight: 501px !important;
+	font-size: 30px;
+	padding-top: 70px;
+}
+
+
+@media only screen and (max-width: 768px) {
+	#carousel .carousel-item {
+		background-size: 70%;
+		background-position: 100% 70%;
+		padding-bottom: 30px;
+	}
+}
+
+#carousel .carousel-item .single-business-ad .business-brand {
+	margin: 70px 0 10px;
+}
+
+@media only screen and (max-width: 768px) {
+	#carousel .carousel-item .buy-now-btn {
+		position: relative;
+		top: 110px;
+		/* text-align: center; */
+	}
+
+	#carousel .carousel-item .single-business-ad .business-brand {
+		position: relative;
+		bottom: -50px;
+		left: 0;
+		/* text-align: center; */
+	}
+}
+
+
+.footer {
+	background-color: #000;
+	color: #FFF;
+	padding: 40px 0;
+}
+
+.footer .footer-logo img {
+	width: 200px;
+}
+
+.footer ul.footer-social-links {
+	list-style: none;
+}
+
+.footer .copyright, .footer .author {
+	line-height: 4;
+	font-size: 14px;
+}
+
+
+
